@@ -1,195 +1,214 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My_site</title>
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:wght@400;700&family=Sawarabi+Mincho&  display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
-</head>
-<body>
-  <div class="fv-wrapper">
+  <head>
+    <!-- 文字コードの指定　UTF-8を指定します -->
+    <meta charset="UTF-8" />
+    <!-- スマホやタブレットでも綺麗に表示する「レスポンシブ表示」のための記述です -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- サイトのアイコンを設定します -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+    <!-- 検索にヒットしないようにするための記述です -->
+    <meta name="robots" content="noindex" />
+    <!-- サイトのタイトルを記述します -->
+    <title>Sweet delight</title>
+    <!-- サイトの概要を記述します -->
+    <meta name="description" content="サイトの概要を記入します。" />
+
+    <!-- GoogleFontsを読み込むための記述です -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- スタイルシートの読み込みのための記述です -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header class="header">
       <div class="header-inner">
+        <h1 class="header-logo">
+          <img src="./img/logo.svg" alt="Sweet Delight" />
+        </h1>
         <nav class="header-nav">
-          <div class="header-box1">
-            <div class="header-logo">
-              <p>TAKUMI YOSHIDA</p>
-            </div>
-            <div class="sns-box">
-              <ul class="sns-list">
-                <li class="sns-item twitter"><a rel="noopener" href="https://twitter.com/tywdpro" target="_blank" class="sns-link"><i class="fab fa-twitter"></i></a></li>
-                <li class="sns-item instagram"><a rel="noopener" href="https://www.instagram.com/tywdpro" target="_blank" class="sns-link"><i class="fab fa-instagram"></i></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="header-box">
-            <ul class="nav-list">
-              <li class="menu-item"><a href="#skillsAni" class="skills-btn">Skills</a></li>
-              <li class="menu-item"><a href="#worksAni" class="works-btn">Works</a></li>
-              <li class="menu-item"><a href="#aboutAni" class="about-btn">About</a></li>
-              <li class="menu-item"><a href="#contactAni" class="contact-btn">Contact</a></li>
-            </ul>
-            <h6 class="side-title">menu_page</h6>
-            <ul class="sns-list">
-              <li class="sns-item twitter"><a rel="noopener" href="https://twitter.com/tywdpro" target="_blank" class="sns-link"><i class="fab fa-twitter"></i></a></li>
-              <li class="sns-item instagram"><a rel="noopener" href="https://www.instagram.com/tywdpro" target="_blank" class="sns-link"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-          </div>
-          <button type="button" class="burger-btn" id="burger-btn">
-            <span class="btn-line"></span>
-          </button>
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a href="#about" class="header-nav-link">About</a>
+            </li>
+            <li class="header-nav-item" id="drawer">
+              <a href="#menu" class="header-nav-link">Menu</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#shop" class="header-nav-link">Shop</a>
+            </li>
+          </ul>
+          <ul class="nav-list-menu">
+            <li class="list-menu-item">
+              <a href="" class="menu-item-link">新発売</a>
+            </li>
+            <li class="list-menu-item">
+              <a href="" class="menu-item-link">おすすめ</a>
+            </li>
+            <li class="list-menu-item">
+              <a href="" class="menu-item-link">期間限定</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
-    <div class="fv-img">
-      <div class="fv-name-box">
-        <h1 class="fv-name">TAKUMI YOSHIDA</h1>
-        <h2 class="fv-img-title"><span class="fv-span">WebDesign</span><span class="fv-span">Coding</span><span class="fv-span">Program</span></h2>
-      </div>
-      <span class="scroll">Scroll !</span>
+    <div class="fv">
+      <picture class="fv-picture">
+        <source media="(min-width: 768px)" srcset="./img/fv.png" />
+        <img
+          src="./img/sp/fv.png"
+          alt="素材のおいしさをそのままに Sweet Delight"
+        />
+      </picture>
     </div>
-    <ul class="bread_crumb">
-      <li>トップページ</li>
-    </ul>
-  </div>  
-  <main>
-    <section class="skills" id="skillsAni">
-      <div class="container">
-        <h2 class="en-title"><span class="color-change">S</span>kills.<span class="title-mask"></span></h2>
-        <h1 class="ja-title">より良いサイト作りを</h1>
-        <ul class="skills-list">
-          <li class="skills-item">
-            <h1 class="skills-title">Design</h1>
-            <div class="skills-box">
-              <p class="skills-text">あなたのデザインを実現<br>素敵なサイト作りを<br>お手伝いいたします</p>
-              <h2 class="skills-lang">html & css</h2>
-            </div>
-          </li>
-          <li class="skills-item">
-            <h1 class="skills-title">Custom</h1>
-            <div class="skills-box">
-              <p class="skills-text">ホームページの管理を<br>ご自身で簡単にできるように<br>プログラムいたします</p>
-              <h2 class="skills-lang">Wordpress</h2>
-            </div>
-          </li>
-          <li class="skills-item">
-            <h1 class="skills-title">Move</h1>
-            <div class="skills-box">
-              <p class="skills-text">ちょっとした遊び心を<br>取り入れることができます</p>
-              <h2 class="skills-lang">Javascript</h2>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="works" id="worksAni">
-      <div class="container">
-        <h2 class="en-title"><span class="color-change gray">W</span>orks.</h2>
-        <h1 class="ja-title">こんなサイト作れます</h1>
-        <ul class="works-list">
-          <li class="works-item">
-            <a href="./single-works.html" class="works-img">
-              <img src="./main/companysite_img.png" alt="" class="w-img">
-              <span class="more-btn">More→</span>
-            </a>
-          </li>
-          <li class="works-item">
-            <a href="./works-2.html" class="works-img">
-              <img src="./main/works-2_img.jpg" alt="" class="w-img">
-              <span class="more-btn">More→</span>
-            </a>
-          </li>
-          <li class="works-item">
-            <a href="./works-3.html" class="works-img">
-              <img src="./main/works-3_img.jpg" alt="" class="w-img">
-              <span class="more-btn">More→</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <span class="mask"></span>
-    </section>
-    <section class="about" id="aboutAni">
-      <div class="container">
-        <h2 class="en-title"><span class="color-change">A</span>bout.<span class="title-mask color-white"></span></h2>
-        <h1 class="ja-title">目指すもの</h1>
-        <ul class="about-list">
-          <li class="about-item">
-            <div class="about-img">
-              <img src="./main/about_img.jpg" alt="">
-            </div>
-            <div class="name-box">
-              <p class="en-name">Takumi Yoshida</p>
-              <p class="ja-name">よしだ たくみ</p>
-              <div class="sns-box">
-                <ul class="sns-list">
-                  <li class="sns-item"><a rel="noopener" href="https://twitter.com/tywdpro" target="_blank"   class="sns-link"><i class="fab fa-twitter"></i></a></li>
-                  <li class="sns-item"><a rel="noopener" href="https://www.instagram.com/tywdpro" target="_blank"   class="sns-link"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="about-desc">
+    <section id="about" class="about">
+      <div class="inner">
+        <h2 class="section-heading">
+          <span class="section-heading-main">About</span>
+          <span class="section-heading-sub">ー 当店について ー</span>
+        </h2>
+        <div class="about-contents">
+          <img src="./img/about.png" alt="" class="about-img" />
+          <div class="about-text-contents">
             <p class="about-text">
-              ホームページ制作を中心に活動しております<br>気軽に管理・運営ができる<br>ページ作りを目指しています
+              当店では、素材の持つ美味しさや風味を最大限に生かし、シンプルでありながらも、素材の良さを引き出すこだわりのスイーツを提供しています。
             </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-  <section class="contact" id="contactAni">
-    <div class="container">
-      <h2 class="en-title"><span class="color-change">C</span>ontact.<span class="title-mask color-white"></span></h2>
-      <h1 class="ja-title">お気軽にどうぞ</h1>
-      <div class="form-inner">
-        <div class="contact-form">
-          <div class="contact-box">
-            <p class="contact-text">
-              制作のご依頼やご相談は<br>SNSのメッセージ機能からお願いいたします。<br>お名前 フリガナ お問い合わせ内容 を<br>お送りください<br>改めて、ご連絡いたします。
+            <p class="about-text">
+              自然な味わいを大切にし、素材を感じさせるスイーツで、心に残るひとときをお過ごしください。
             </p>
-            <div class="sns-box">
-              <ul class="sns-list">
-                <li class="sns-item"><a rel="noopener" href="https://twitter.com/tywdpro" target="_blank"   class="sns-link twitter"><i class="fab fa-twitter"></i><span class="sns-name">@tywdpro</span></a></li>
-                <li class="sns-item"><a rel="noopener" href="https://www.instagram.com/tywdpro" target="_blank"   class="sns-link instagram"><i class="fab fa-instagram"></i><span class="sns-name">@tywdpro</span></a></li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <footer>
-    <div class="container">
-      <nav class="footer-nav">
-        <ul class="footer-list">
-          <li class="menu-item"><a href="#skillsAni" class="skills-btn">Skills</a></li>
-          <li class="menu-item"><a href="#worksAni" class="works-btn">Works</a></li>
-          <li class="menu-item"><a href="#aboutAni" class="about-btn">About</a></li>
-          <li class="menu-item"><a href="#contactAni" class="contact-btn">Contact</a></li>
-        </ul>
-        <div class="sns-box">
-          <ul class="sns-list">
-            <li class="sns-item twitter"><a rel="noopener" href="https://twitter.com/tywdpro" target="_blank" class="sns-link"><i class="fab fa-twitter"></i></a></li>
-            <li class="sns-item instagram"><a rel="noopener" href="https://www.instagram.com/tywdpro" target="_blank" class="sns-link"><i class="fab fa-instagram"></i></a></li>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="inner">
+        <h2 class="section-heading">
+          <span class="section-heading-main">Menu</span>
+          <span class="section-heading-sub">ー 今月のケーキ ー</span>
+        </h2>
+        <div class="menu-contents">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <div class="menu-img">
+                <a href="#"
+                  ><img src="./img/menu1.png" alt="おすすめ ストロベリーケーキ"
+                /></a>
+              </div>
+              <div class="menu-text-contents">
+                <h3 class="menu-name">
+                  <span class="menu-name-main">ストロベリーケーキ</span>
+                  <span class="menu-name-sub">- Strawberry cake -</span>
+                </h3>
+                <p class="menu-text"># 旬のあまおうトッピング</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <div class="menu-img">
+                <a href="#"
+                  ><img
+                    src="./img/menu2.png"
+                    alt="新発売 ブルーベリーチーズケーキ"
+                /></a>
+              </div>
+              <div class="menu-text-contents">
+                <h3 class="menu-name">
+                  <span class="menu-name-main">ブルーベリーチーズケーキ</span>
+                  <span class="menu-name-sub">- Blueberry cheesecake -</span>
+                </h3>
+                <p class="menu-text"># フランス産チーズをブレンド</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <div class="menu-img">
+                <a href="#"
+                  ><img src="./img/menu3.png" alt="おすすめ チョコレートケーキ"
+                /></a>
+              </div>
+              <div class="menu-text-contents">
+                <h3 class="menu-name">
+                  <span class="menu-name-main">チョコレートケーキ</span>
+                  <span class="menu-name-sub">- Chocolate cake -</span>
+                </h3>
+                <p class="menu-text"># ベルギー産チョコレート使用</p>
+              </div>
+            </li>
           </ul>
         </div>
-      </nav>
-      <div class="footer-box">
-        <a href="./privacy.html" class="privacy-policy">privacy-policy</a>
-        <small>©︎2021 YOSHIDA TAKUMI</small>
       </div>
-      <div class="top-btn" id="page-top"><a class="top-link">Top</a></div>
+    </section>
+    <!-- モーダル -->
+    <div class="modal">
+      <div class="big-img"><img src="" alt="" /></div>
+      <p class="close-btn"><a href="#">×</a></p>
     </div>
-  </footer>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+    <section id="shop" class="shop">
+      <div class="shop-inner">
+        <h2 class="section-heading section-heading-l">
+          <span class="section-heading-main">Shop</span>
+          <span class="section-heading-sub">ー ショップ情報 ー</span>
+        </h2>
+        <div class="shop-contents">
+          <p class="shop-text">
+            ただいま、オンラインストアを準備中です。<br />最新情報は以下より送信いただいた<br />メールアドレスへご案内いたします。
+          </p>
+          <form action="" class="form">
+            <input
+              type="email"
+              class="form-input"
+              placeholder="sample@sample.com"
+            />
+            <button type="submit" class="form-submit">SEND</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="./img/logo.svg" alt="Sweet Delight" />
+      </div>
+      <p class="footer-text">ー 各SNS更新中 ー</p>
+      <ul class="footer-nav-list">
+        <li class="footer-nave-item">
+          <a
+            href="https://www.instagram.com/?hl=ja"
+            target="_blank"
+            class="footer-nav-link"
+            ><img src="./img/icon-instagram.png" alt="" class="sns-img" />
+            <p class="footer-nav-link-text">メニューご案内</p></a
+          >
+        </li>
+        <li class="footer-nave-item">
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            class="footer-nav-link"
+            ><img src="./img/icon-youtube.png" alt="" class="sns-img" />
+            <p class="footer-nav-link-text">制作のウラガワ</p></a
+          >
+        </li>
+        <li class="footer-nave-item">
+          <a href="https://twitter.com/" target="_blank" class="footer-nav-link"
+            ><img src="./img/icon-twitter.png" alt="" class="sns-img" />
+            <p class="footer-nav-link-text">お店の混雑状況</p></a
+          >
+        </li>
+      </ul>
+      <div class="footer-copy-wrapper">
+        <small class="footer-copylight">&copy;2023 Sweet Delight.</small>
+      </div>
+    </footer>
+    <div class="page-top-button">
+      <a href="#">TOP</a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./style.js"></script>
+  </body>
 </html>
